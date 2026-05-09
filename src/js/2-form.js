@@ -25,7 +25,7 @@ formEl.addEventListener('submit', event => {
     return;
   }
   console.log(formData);
-  localStorage.clear();
+  localStorage.removeItem('feedback-form-state');
   formData.email = '';
   formData.message = '';
   formEl.reset();
